@@ -41,7 +41,7 @@
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
-        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTask.BackgroundTaskSample">
+        <Extension Category="windows.backgroundTasks" EntryPoint="RuntimeComponent3.BGTask">
           <BackgroundTasks>
             <Task Type="systemEvent"/>
           </BackgroundTasks>

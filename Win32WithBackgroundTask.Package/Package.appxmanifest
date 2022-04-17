@@ -40,12 +40,12 @@
         <uap:SplashScreen Image="Images\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
-        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTask.BackgroundTaskSample">
-          <BackgroundTasks>
-            <Task Type="systemEvent"/>
-          </BackgroundTasks>
-        </Extension>
-      </Extensions>
+		  <Extension Category="windows.backgroundTasks" EntryPoint="RuntimeComponent3.BGTask">
+			  <BackgroundTasks>
+				  <Task Type="systemEvent" />
+			  </BackgroundTasks>
+		  </Extension>
+	  </Extensions>
     </Application>
   </Applications>
 
@@ -53,4 +53,12 @@
     <Capability Name="internetClient" />
     <rescap:Capability Name="runFullTrust" />
   </Capabilities>
+	<Extensions>
+		<Extension Category="windows.activatableClass.inProcessServer">
+			<InProcessServer>
+				<Path>RuntimeComponent3.dll</Path>
+				<ActivatableClass ActivatableClassId="RuntimeComponent3.BGTask" ThreadingModel="both" />
+			</InProcessServer>
+		</Extension>
+	</Extensions>
 </Package>

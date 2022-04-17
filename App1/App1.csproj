@@ -155,9 +155,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BackgroundTask\BackgroundTask.csproj">
-      <Project>{62747446-92cd-462f-9e4c-3064e9c71027}</Project>
-      <Name>BackgroundTask</Name>
+    <ProjectReference Include="..\RuntimeComponent3\RuntimeComponent3.vcxproj">
+      <Project>{158a7bb2-5696-469b-91ee-7cfa5ad3e96c}</Project>
+      <Name>RuntimeComponent3</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

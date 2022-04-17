@@ -32,7 +32,7 @@ namespace App1
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-             RegisterBackgroundTask( "BackgroundTask.BackgroundTaskSample", "BackgroundTaskSample",
+             RegisterBackgroundTask("RuntimeComponent3.BGTask", "BackgroundTaskSample",
                                                                        new SystemTrigger(SystemTriggerType.TimeZoneChange, false),
                                                                        null);
         }

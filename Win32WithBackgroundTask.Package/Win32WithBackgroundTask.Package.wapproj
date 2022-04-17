@@ -56,7 +56,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
     <NoWarn>$(NoWarn);NU1702</NoWarn>
-    <EntryPointProjectUniqueName>..\Win32WithBackgroundTask\Win32WithBackgroundTask.vcxproj</EntryPointProjectUniqueName>
+    <EntryPointProjectUniqueName>..\ConsoleRegisterBackgroundTask\ConsoleRegisterBackgroundTask.vcxproj</EntryPointProjectUniqueName>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -78,11 +78,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App1\App1.csproj" />
-    <ProjectReference Include="..\Win32WithBackgroundTask\Win32WithBackgroundTask.vcxproj" />
+    <ProjectReference Include="..\ConsoleRegisterBackgroundTask\ConsoleRegisterBackgroundTask.vcxproj" />
   </ItemGroup>
-  <ItemGroup>
+  <!--<ItemGroup>
     <Content Include="BackgroundTask\\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
+  </ItemGroup>-->
 </Project>

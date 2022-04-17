@@ -1,0 +1,8 @@
+namespace BackgroundTaskCPP
+{
+    [default_interface]
+    runtimeclass BackgroundTask : Windows.ApplicationModel.Background.IBackgroundTask
+    {
+        //void Run(IBackgroundTaskInstance);
+    }
+}
