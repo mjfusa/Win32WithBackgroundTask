@@ -6,7 +6,7 @@ Background Task, Win32 Console App for Background task Registration, Packaging P
 
 * [Visual Studio 2022 Preview (Preview 3.0+)](https://visualstudio.microsoft.com/vs/preview/)
   * _Select the Universal Windows Platform development workload. In Installation Details > Universal Windows Platform development, check the C++ (v143) Universal Windows Platform tools option(s)._
-  ![Visual Studio 2022 Installer](png\install.png)
+  ![Visual Studio 2022 Installer](png/install.png)
 * [Windows App SDK 22000](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 * Windows Developer Mode: Windows Settings > Update & Security > For developers, choose the Developer mode option.
 
