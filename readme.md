@@ -20,6 +20,20 @@ Background Task, Win32 Console App for Background task Registration, Packaging P
 ```
 Note: You will see the UWPHead app is also deployed when debugging from Visual Studio, however it is not included in the app package when distributing the app.
 ```
+The app can be started using the command **ConsoleRegisterBackgroundTask**.
+This is accomplished with the following alias settings in the Package.manifest:
+
+```xml
+<uap3:Extension Category="windows.appExecutionAlias" Executable="ConsoleRegisterBackgroundTask\ConsoleRegisterBackgroundTask.exe" EntryPoint="Windows.FullTrustApplication">
+   <uap3:AppExecutionAlias>
+     <desktop:ExecutionAlias Alias="ConsoleRegisterBackgroundTask.exe" />
+  </uap3:AppExecutionAlias>
+</uap3:Extension>
+```
+
+
+
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
