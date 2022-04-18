@@ -1,8 +1,0 @@
-namespace RuntimeComponent3
-{
-    [default_interface]
-    runtimeclass BGTask : Windows.ApplicationModel.Background.IBackgroundTask
-    {
-        BGTask();
-    }
-}

@@ -41,7 +41,7 @@ IAsyncOperation<IBackgroundTaskRegistration> RegisterBackgroundTask(winrt::hstri
     BackgroundTaskBuilder builder = BackgroundTaskBuilder();
     builder.Name(triggerName);
     builder.SetTrigger(trigger);
-    builder.TaskEntryPoint(to_hstring("RuntimeComponent3.BGTask"));
+    builder.TaskEntryPoint(to_hstring("BackgroundTaskComponent.BGTask"));
     co_return builder.Register();
 }
 
@@ -69,7 +69,7 @@ IAsyncOperation<IBackgroundTaskRegistration> RegisterMyBackgroundTask()
 int main()
 {
     // App must run packaged. ApplicationModel::Package will throw an expection if not. See Windows Application Packaging Project
-    auto p = winrt::Windows::ApplicationModel::Package::Current();
+    auto p = Package::Current();
     auto pv = p.Id().Version();
     std::cout << "Version: " << pv.Major << "." << pv.Minor << "." << pv.Build << "." << pv.Revision << "\n";
 
